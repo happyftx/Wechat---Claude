@@ -1,1 +1,1 @@
-import './weixin/weixin-adapter.js';
+export * from './weixin/weixin-adapter.js';

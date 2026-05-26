@@ -3,3 +3,8 @@ dist/
 *.tgz
 .env
 config.env
+output.log
+weixin_output.log
+run.js
+test_login.ts
+config.env

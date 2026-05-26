@@ -11,7 +11,8 @@ import type { BridgeStatus, InboundMessage, OutboundMessage, StreamingPreviewSta
 import { createAdapter, getRegisteredTypes } from './channel-adapter.js';
 import type { BaseChannelAdapter } from './channel-adapter.js';
 // Side-effect import: triggers self-registration of all adapter factories
-import './adapters/index.js';
+import { initWeixin } from './adapters/index.js';
+initWeixin();
 import * as router from './channel-router.js';
 import * as engine from './conversation-engine.js';
 import * as broker from './permission-broker.js';
